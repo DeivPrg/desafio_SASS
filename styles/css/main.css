@@ -1,0 +1,226 @@
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  list-style: none; }
+
+s
+ul, ol {
+  list-style: none; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.floatLeft {
+  float: left;
+  padding: .5em .5em .5em 0; }
+
+.floatRight {
+  float: right;
+  padding: .5em 0 .5em .5em; }
+
+img {
+  width: 100px; }
+
+* {
+  font-family: 'Roboto', sans-serif; }
+
+.main-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 12px; }
+
+nav {
+  height: 100px;
+  background-color: #8a112f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.logoString {
+  margin: 0px 40px;
+  width: 250px; }
+
+/* Nav list */
+.link_nav {
+  color: #ffffffb4;
+  letter-spacing: 0.4px;
+  padding: 22px 25px; }
+  .link_nav:hover {
+    color: #ffffff; }
+
+.nav_listMain {
+  display: flex;
+  flex: 1; }
+
+.nav_datos {
+  display: flex; }
+  .nav_datos p {
+    color: white;
+    margin: 0 15px;
+    font-size: 13px;
+    font-weight: 300; }
+
+/* Menu Hamburguesa */
+.nav_listMain_mobile {
+  display: none; }
+
+#check {
+  display: none; }
+
+.check-btn img {
+  display: none;
+  width: 30px; }
+
+header {
+  width: 100%;
+  height: 550px;
+  background-image: url(../../public/main/main_img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  header .header_text {
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 30px; }
+    header .header_text h1 {
+      color: white;
+      font-size: 30px; }
+    header .header_text p {
+      margin-top: 10px;
+      color: white;
+      font-size: 18px;
+      font-weight: 350;
+      text-align: center; }
+
+footer {
+  width: 100%;
+  background-color: #3a3a3a;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.footer_social_network {
+  width: 100%;
+  background-color: #2e2e2e;
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .footer_social_network a {
+    padding: 0 20px; }
+    .footer_social_network a img {
+      padding: 15px 0;
+      width: 30px; }
+
+.logo_footer {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+footer p {
+  color: #ffffffb4;
+  padding: 0 25px;
+  margin-top: 35px;
+  font-size: 11px;
+  font-weight: 300;
+  text-align: center; }
+
+@media (max-width: 1440px) {
+  .nav_datos .nav_datos_mail {
+    display: none; }
+  .nav_datos .nav_datos_tel {
+    margin-right: 20px; } }
+
+@media screen and (max-width: 1024px) {
+  /* ---------- NAV ---------- */
+  nav {
+    justify-content: none;
+    flex: auto; }
+  .logoSword {
+    display: none; }
+  /* Nav Hamburguesa */
+  .check-btn img {
+    margin-left: 15px;
+    display: block;
+    width: 30px; }
+  .img_boton_hamburguesa {
+    width: 10px; }
+  /* Al apretar el icono hamburguesa muestro el nav mobile */
+  .nav_input:checked + .nav_listMain_mobile {
+    clip-path: circle(100% at center); }
+  /* escondo el nav principal */
+  .nav_listMain {
+    display: none; }
+  /* hago visible el nav mobile */
+  .nav_listMain_mobile {
+    display: block;
+    width: 75%;
+    height: max-content;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    background-color: #bdbdbd;
+    padding-bottom: 1px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    clip-path: circle(0 at center);
+    /*Lo pone por encima de todo*/ }
+    .nav_listMain_mobile li {
+      height: max-content;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .nav_listMain_mobile li a {
+        width: 99%;
+        height: max-content;
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+        background-color: #8a112f;
+        display: flex;
+        /*deja que el tamano del a sea igual al del contenedor*/
+        justify-content: center;
+        align-items: center; }
+  .nav_listMain_mobile li {
+    height: max-content;
+    padding: 1px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
+
+@media (max-width: 768px) {
+  /* ---------- NAV ---------- */
+  .link_is {
+    display: none; }
+  .nav_datos .nav_datos_tel {
+    display: none; } }
+
+@media (max-width: 480px) {
+  /* ---------- NAV ---------- */
+  nav {
+    height: 70px; }
+  .logoString {
+    width: 152px;
+    padding: 19px 20px; }
+  .nav_listRight .nav_listRight-btnJugar {
+    background-color: #f19100;
+    color: #000000;
+    padding: 22px 28px; }
+  .nav_listMain_mobile li a {
+    font-size: 12px; }
+  /* ---------- HEADER ---------- */
+  header {
+    height: 380px; } }

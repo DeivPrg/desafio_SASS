@@ -1,0 +1,60 @@
+//========== NAV ==========//
+
+nav {
+    height: 100px;
+    background-color: $primary_background;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+// Logo
+.logoString {
+    margin: 0px 40px;
+    width: 250px;
+}
+
+/* Nav list */
+.link_nav {
+    color: #ffffffb4;
+    letter-spacing: 0.4px;
+    padding: 22px 25px;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.nav_listMain {
+    display: flex;
+    flex: 1;
+}
+
+
+// Lista de datos
+.nav_datos{
+    display: flex;
+    p{
+        color: white;
+        margin: 0 15px;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    
+}
+
+/* Menu Hamburguesa */
+.nav_listMain_mobile {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.check-btn img {
+    display: none;
+    width: 30px;
+}
