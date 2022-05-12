@@ -13,6 +13,11 @@
     font-size: 12px;
 }
 
+main{
+    width: 100%;
+    height: max-content
+}
+
 //====== NAV ======//
 @import "nav";
 
@@ -20,6 +25,8 @@
 //====== HEADER ======//
 @import "header";
 
+//====== SECCION MAIN ======//
+@import "seccion_main";
 
 //====== FOOTER ======//
 @import "footer";

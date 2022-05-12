@@ -107,6 +107,47 @@
         align-items: center;
         justify-content: center;
     }
+
+    /* ---------- SECCION MAIN ---------- */
+        //----- seccion video -----//
+    .section_video {
+        height: 700px;
+
+        iframe {
+            width: 700px;
+            height: 394px;
+        }
+    }
+
+    //----- seccion proque moto electrica -----//
+    .section_porque {
+        margin-top: 0px;
+
+        h3 {
+            font-size: 22px;
+            margin-bottom: 50px;
+        }
+
+        .articulo_porque {
+            padding: 0 120px;
+
+            .art_cardColum_one {
+                .art_card {
+                    padding: 17px;
+                    font-size: 13px;
+
+                }
+            }
+            .art_cardColum_two {
+
+
+                .art_card {
+                    padding: 17px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -128,14 +169,32 @@
 
 }
 
+//----- 650px -----//
+@media (max-width:650px) {
+    
+        //----- seccion proque moto electrica -----//
+        .section_porque {
+            .articulo_porque {
+
+                .art_cardColum_two {
+                    display: none;
+                }
+            }
+        }
+}
+
 
 
 //----- 480px -----//
 @media (max-width:480px) {
 
     /* ---------- NAV ---------- */
-    nav{
+    nav {
         height: 70px;
+    }
+
+    .nav_listMain_mobile {
+        top: 70px;
     }
 
     // Logo string
@@ -164,10 +223,55 @@
 
 
     /* ---------- HEADER ---------- */
-    header{
-        height: 380px;
+    header {
+        height: 350px;
+
+        .header_text {
+
+            h1 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
     }
 
+    /* ---------- SECCION MAIN ---------- */
+    .section_video {
+        height: 400px;
 
+        iframe {
+            width: 375px;
+            height: 210px;
+        }
+    }
+
+        //----- seccion proque moto electrica -----//
+        .section_porque {
+            margin-top: 0px;
     
-}
+            h3 {
+                font-size: 19px;
+                margin-bottom: 35px;
+            }
+    
+            .articulo_porque {
+                flex-direction: column;
+                padding: 0 60px;
+    
+                .art_cardColum_one {
+                    .art_card {
+                        padding: 17px;
+                        font-size: 13px;
+    
+                    }
+                }
+                .art_cardColum_two {
+                    display: none;
+                }
+            }
+        }
+    }
+
