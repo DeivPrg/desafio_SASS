@@ -18,6 +18,14 @@ main{
     height: max-content
 }
 
+//MAPA TITULOS
+$headings:(
+    h1:35px,
+    h2:26px,
+    h3:20px,
+    h4:18px
+);
+
 //====== NAV ======//
 @import "nav";
 

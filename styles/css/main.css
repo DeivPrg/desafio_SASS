@@ -6,8 +6,7 @@ li, dl, dt, dd, form, a, fieldset, input, th, td {
   outline: none;
   list-style: none; }
 
-s
-ul, ol {
+s ul, ol {
   list-style: none; }
 
 a {
@@ -98,7 +97,7 @@ header {
     padding: 30px; }
     header .header_text h1 {
       color: white;
-      font-size: 30px; }
+      font-size: 35px; }
     header .header_text p {
       margin-top: 10px;
       color: white;
@@ -123,7 +122,7 @@ header {
   align-items: center;
   margin-bottom: 50px; }
   .section_porque h3 {
-    font-size: 26px;
+    font-size: 20px;
     margin-bottom: 55px; }
   .section_porque .articulo_porque {
     display: flex;
@@ -145,7 +144,8 @@ header {
   font-size: 12px; }
 
 .titulo-pag {
-  margin: 40px;
+  margin-top: 40px;
+  margin-bottom: 30px;
   font-size: 28px;
   color: #8a112f;
   text-align: center; }
@@ -155,11 +155,12 @@ header {
   .seccion-productos .card-pr-one {
     display: flex;
     justify-content: center; }
-    .seccion-productos .card-pr-one .card-productos {
+    .seccion-productos .card-pr-one .card, .seccion-productos .card-pr-one .card-productos {
       margin: 0 50px;
       padding: 30px 50px;
       width: 550px;
-      border: 0.5px solid #cccccc;
+      border: 0.5px solid #cccccc; }
+    .seccion-productos .card-pr-one .card-productos {
       justify-content: center;
       align-content: content;
       text-align: center; }
@@ -175,11 +176,12 @@ header {
     margin-top: 30px;
     display: flex;
     justify-content: center; }
-    .seccion-productos .card-pr-two .card-productos {
+    .seccion-productos .card-pr-two .card, .seccion-productos .card-pr-two .card-productos {
       margin: 0 50px;
       padding: 30px 50px;
       width: 550px;
-      border: 0.5px solid #cccccc;
+      border: 0.5px solid #cccccc; }
+    .seccion-productos .card-pr-two .card-productos {
       justify-content: center;
       align-content: content;
       text-align: center; }

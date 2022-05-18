@@ -1,77 +1,95 @@
 //========== PRODUCTOS ==========//
-    .productos-wrapper{
+.productos-wrapper {
     width: 100%;
     background-color: #ffffff;
     color: #000000;
     font-size: 12px;
 }
 
-.titulo-pag{
-    margin: 40px;
+//7.-MIXIN MARGIN
+@mixin margin($margtop, $marbt) {
+    margin-top: $margtop;
+    margin-bottom: $marbt;
+}
+
+.titulo-pag {
+    @include margin(40px, 30px, );
     font-size: 28px;
     color: $primary_background;
     text-align: center;
 }
 
-.seccion-productos{
-    margin: 70px 0 ;
-    .card-pr-one{
+.seccion-productos {
+    margin: 70px 0;
+
+    .card-pr-one {
         display: flex;
         justify-content: center;
-        
-        .card-productos{
+
+        //EXTEND CARD
+        .card {
             margin: 0 50px;
             padding: 30px 50px;
             width: 550px;
             border: 0.5px solid rgb(204, 204, 204);
+        }
+
+        .card-productos {
+            @extend .card;
 
             justify-content: center;
             align-content: content;
             text-align: center;
 
-            img{
+            img {
                 width: 300px;
             }
-
-            h3{
+            $h3: map-get($headings,h3);
+            h3 {
                 margin: 20px 0;
-                font-size: 20px;
+                font-size: $h3;
                 color: $primary_background;
             }
 
-            p{
+            p {
                 text-align: left;
             }
 
         }
     }
 
-    .card-pr-two{
+    .card-pr-two {
         margin-top: 30px;
         display: flex;
         justify-content: center;
 
-        .card-productos{
+        //EXTEND CARD
+        .card {
             margin: 0 50px;
             padding: 30px 50px;
             width: 550px;
-            border: 0.5px solid  rgb(204, 204, 204);
+            border: 0.5px solid rgb(204, 204, 204);
+        }
+
+        .card-productos {
+            @extend .card;
+
 
             justify-content: center;
             align-content: content;
             text-align: center;
 
-            img{
+            img {
                 width: 300px;
             }
-            
-            h3{
+            $h3: map-get($headings,h3);
+            h3 {
                 color: $primary_background;
                 margin: 20px 0;
-                font-size: 20px;
+                font-size: $h3;
             }
 
-            p{
+            p {
                 text-align: left;
             }
 
