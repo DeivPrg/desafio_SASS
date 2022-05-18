@@ -25,12 +25,29 @@ main{
 //====== HEADER ======//
 @import "header";
 
+
+
+
 //====== SECCION MAIN ======//
 @import "seccion_main";
 
+//====== PRODUCTOS ======//
+@import "productos";
+
+//====== PRECIOS ======//
+@import "precios";
+
+//====== NOSOTROS ======//
+@import "nosotros";
+
+//====== CONTACTO ======//
+@import "contacto";
+
+
+
+
 //====== FOOTER ======//
 @import "footer";
-
 
 //====== MEDIA QUERIES ======//
 @import "mediaqueries";

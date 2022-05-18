@@ -1,0 +1,81 @@
+//========== PRODUCTOS ==========//
+    .productos-wrapper{
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 12px;
+}
+
+.titulo-pag{
+    margin: 40px;
+    font-size: 28px;
+    color: $primary_background;
+    text-align: center;
+}
+
+.seccion-productos{
+    margin: 70px 0 ;
+    .card-pr-one{
+        display: flex;
+        justify-content: center;
+        
+        .card-productos{
+            margin: 0 50px;
+            padding: 30px 50px;
+            width: 550px;
+            border: 0.5px solid rgb(204, 204, 204);
+
+            justify-content: center;
+            align-content: content;
+            text-align: center;
+
+            img{
+                width: 300px;
+            }
+
+            h3{
+                margin: 20px 0;
+                font-size: 20px;
+                color: $primary_background;
+            }
+
+            p{
+                text-align: left;
+            }
+
+        }
+    }
+
+    .card-pr-two{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+
+        .card-productos{
+            margin: 0 50px;
+            padding: 30px 50px;
+            width: 550px;
+            border: 0.5px solid  rgb(204, 204, 204);
+
+            justify-content: center;
+            align-content: content;
+            text-align: center;
+
+            img{
+                width: 300px;
+            }
+            
+            h3{
+                color: $primary_background;
+                margin: 20px 0;
+                font-size: 20px;
+            }
+
+            p{
+                text-align: left;
+            }
+
+
+        }
+    }
+}
